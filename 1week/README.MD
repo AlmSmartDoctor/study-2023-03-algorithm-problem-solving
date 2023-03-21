@@ -1,4 +1,4 @@
-##무식하게 풀기(Brute Force)
+## 무식하게 풀기(Brute Force)
 -------------------------------------
 이번 챕터에서 배울 알고르짐은 완전 탐색 알고리즘(Brute force) 입니다. 
 
@@ -164,12 +164,18 @@ double shortestPath(vector<int>& path, vector<bool>& visited, double currentLeng
 - 모든 조합 만들기 -> (n,r)
 - 2의 n승 만들기 -> 각 조합을 n비트 정수로 표현.
 
-### 문제 정하기.
------------------------------------------------------------------
-김재헌:
-김하진:
-박진영:
-서민혁:
-유태정:
-이성구:
-이재혁:
+## 문제 정하기
+
+김재헌: https://www.acmicpc.net/problem/1035
+
+김하진: _다음 스터디까지 풀어올 문제를 정해주세요._
+
+박진영: https://www.acmicpc.net/problem/2082
+
+서민혁: https://www.acmicpc.net/problem/1664
+
+유태정: https://www.acmicpc.net/problem/1101
+
+이성구: https://www.acmicpc.net/problem/1062
+
+이재혁: https://www.acmicpc.net/problem/1941
