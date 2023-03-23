@@ -1,3 +1,7 @@
+//문제 사이트 : https://www.acmicpc.net/problem/1062
+//제출 답안 : https://www.acmicpc.net/source/57947802
+
+
 int ret = 0;
 
 void recursive(int n, int k, int toPick, int checked, int start,vector<int>& words) {
