@@ -1,30 +1,32 @@
-inline fun <T, reified R> Array<Array<T>>.map2(f: (T) -> R): Array<Array<R>> =
+typealias Array2<T> = Array<Array<T>>
+
+inline fun <T, reified R> Array2<T>.map2(f: (T) -> R): Array2<R> =
     map { it.map(f).toTypedArray() }.toTypedArray()
 
-fun Array<Array<Int>>.isSafeFromJangma(gansuryang: Int): Array<Array<Boolean>> =
+fun Array2<Int>.isSafeFromJangma(gansuryang: Int): Array2<Boolean> =
     map2 { it > gansuryang }
 
-fun Array<Array<Boolean>>.recursivelyMarkFalse(x: Int, y: Int) {
+fun Array2<Boolean>.markFalseRecursively(x: Int, y: Int) {
     if (x < 0 || y < 0 || x >= size || y >= size) {
         return
     }
-    if (this[y][x] == false) return
+    if (!this[y][x]) return
 
     this[y][x] = false
-    recursivelyMarkFalse(x = x + 1, y = y)
-    recursivelyMarkFalse(x = x - 1, y = y)
-    recursivelyMarkFalse(x = x, y = y + 1)
-    recursivelyMarkFalse(x = x, y = y - 1)
+    markFalseRecursively(x = x + 1, y = y)
+    markFalseRecursively(x = x - 1, y = y)
+    markFalseRecursively(x = x, y = y + 1)
+    markFalseRecursively(x = x, y = y - 1)
 }
 
-fun Array<Array<Boolean>>.getNumberOfSafeZones(): Int {
+fun Array2<Boolean>.getNumberOfSafeZones(): Int {
     var numberOfSafeZones = 0
 
     mapIndexed { y, xs ->
         xs.mapIndexed { x, isSafe ->
             if (isSafe) {
                 numberOfSafeZones++
-                recursivelyMarkFalse(x = x, y = y)
+                markFalseRecursively(x = x, y = y)
             }
         }
     }
