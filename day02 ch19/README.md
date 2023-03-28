@@ -214,3 +214,11 @@ struct RNG {
 
 - 자주 사용되는 선형 합동 난수 생성기 패턴이니 참고
 
+# 문제풀이
+유태정: https://www.acmicpc.net/problem/11899
+이성구: https://www.acmicpc.net/problem/25096
+이재혁: https://www.acmicpc.net/problem/2841
+서민혁: https://www.acmicpc.net/problem/20960
+김재헌: https://www.acmicpc.net/problem/14035
+박진영:
+김하진:
