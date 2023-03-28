@@ -15,9 +15,9 @@
 
 스택
 
-- Stack, LIFO (last in, last out)
+- Stack, LIFO (last in, first out)
 - 가장 늦게 들어간 데이터를 가장 먼저 꺼냄
-- 재귀함수의 호출 스택 관리를 스택으로 함
+- 함수의 호출 스택 관리를 스택으로 함
 
 데크
 
@@ -203,7 +203,7 @@ int countRanges(int k, int n) {
 ```c++
 struct RNG {
     unsigned seed;
-    RNG() : sead(1983) {}
+    RNG() : seed(1983) {}
     unsigned next() {
         unsigned ret = seed;
         seed = ((seed * 214013u) + 2531011u);
