@@ -226,6 +226,6 @@ struct RNG {
 
 김재헌: https://www.acmicpc.net/problem/14035
 
-박진영:
+박진영: https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/description/
 
 김하진:
