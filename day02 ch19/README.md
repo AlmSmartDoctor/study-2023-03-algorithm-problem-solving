@@ -228,4 +228,4 @@ struct RNG {
 
 박진영: https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/description/
 
-김하진:
+김하진: https://leetcode.com/problems/dota2-senate/submissions/925102084/
