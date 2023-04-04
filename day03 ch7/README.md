@@ -215,3 +215,21 @@ int solve(int left, int right) {
 각 단계에서 탐색 범위 만큼 판자들을 하나하나 검사합니다. (선형 시간)
 
 그러니 총 시간 복잡도는 O(nlgn) 입니다.
+
+# 문제풀이
+
+유태정: https://www.acmicpc.net/problem/1030
+
+김하진: https://leetcode.com/problems/merge-k-sorted-lists/
+
+박진영: https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/
+
+서민혁: https://www.acmicpc.net/problem/1588
+
+이재혁 : https://www.acmicpc.net/problem/1493
+
+이성구 : https://www.acmicpc.net/problem/9198
+
+김재헌 : https://www.acmicpc.net/problem/1634
+
+++++++++
