@@ -228,7 +228,7 @@ int solve(int left, int right) {
 
 이재혁 : https://www.acmicpc.net/problem/1493
 
-이성구 : https://www.acmicpc.net/problem/9198
+이성구 : https://leetcode.com/problems/median-of-two-sorted-arrays/
 
 김재헌 : https://www.acmicpc.net/problem/1634
 
