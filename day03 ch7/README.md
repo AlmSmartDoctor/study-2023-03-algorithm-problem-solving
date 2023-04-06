@@ -218,7 +218,7 @@ int solve(int left, int right) {
 
 # 문제풀이
 
-유태정: https://www.acmicpc.net/problem/4779
+유태정: https://www.acmicpc.net/problem/2447
 
 김하진: https://leetcode.com/problems/merge-k-sorted-lists/
 
