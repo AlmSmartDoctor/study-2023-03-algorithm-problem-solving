@@ -221,20 +221,20 @@ int concat(const vector<int>& lengths) {
 
 ---
 
-유태정:
+유태정: https://www.acmicpc.net/problem/1636
 
-김하진:
+김하진:https://leetcode.com/problems/strong-password-checker/
 
-박진영:
+박진영:https://leetcode.com/problems/container-with-most-water/
 
-서민혁:
+서민혁: https://www.acmicpc.net/problem/1036
 
-이재혁:
+이재혁: https://www.acmicpc.net/problem/6068
 
-이성구:
+이성구: https://www.acmicpc.net/problem/2879
 
-김재헌:
+김재헌: https://www.acmicpc.net/problem/19700
 
 한태혁:
 
-박상준: 
+박상준: https://leetcode.com/problems/partition-labels/
