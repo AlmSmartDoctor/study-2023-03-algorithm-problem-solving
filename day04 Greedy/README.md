@@ -235,6 +235,6 @@ int concat(const vector<int>& lengths) {
 
 김재헌: https://www.acmicpc.net/problem/19700
 
-한태혁:
+한태혁: https://leetcode.com/problems/earliest-possible-day-of-full-bloom/
 
 박상준: https://leetcode.com/problems/partition-labels/
