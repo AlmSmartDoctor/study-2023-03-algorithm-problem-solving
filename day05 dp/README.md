@@ -232,7 +232,7 @@ double search(vector<int>& path) {
 
 2. 전체 경로의 확률 계산 -> 현재 위치에서 시작해 남은 날짜 동안 움직여 q에 도달할 확률을 계산
 
-`search3(here,days)` : 두니발이 days일 째에 here번 마을에 있을 때, 마지막 날 q 마을에 있을 조건부 확률을 반환
+`search3(here,days)` : 두니발이 days일 째에 here번 마을에 있을 확률 반환
 
 ```c
 int n,d,p,q;
