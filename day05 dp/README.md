@@ -191,6 +191,29 @@ dp는 최적화 문제의 해답을 빠르게 찾기 위해 고안되었고, 가
 
 270p 두니발 박사의 모험 (중)
 
+https://www.algospot.com/judge/problem/read/NUMB3RS
+
+```
+2
+5 2 0
+0 1 1 1 0
+1 0 0 0 1
+1 0 0 0 0
+1 0 0 0 0
+0 1 0 0 0
+3
+0 2 4
+```
+
+<br/>
+<br/>
+<br/>
+<img src="./img.jpg">
+<br/>
+<br/>
+<br/>
+<br/>
+
 ```c
 // n=마을 수 d=지난 날 p=교도소가 있는 마을 q=d일 후 마을
 int n,d,p,q;
@@ -200,30 +223,32 @@ int connected[51][51], deg[51];
 
 double search(vector<int>& path) {
 
-  // base case : d일이 지난 경우
-  if (path.size()==d+1) {
-    // q에서 안 끝나면 무효
-    if(path.back()!=q) return 0.0;
+// base case : d일이 지난 경우
+if (path.size()==d+1) {
+// q에서 안 끝나면 무효
+if(path.back()!=q) return 0.0;
 
     double ret = 1.0;
 
     for(int i=0; i+1<path.size(); ++i)
       ret /= deg[path[i]];
     return ret;
-  }
 
-  double ret=0;
-
-  for(int there=0; there<n; ++there) {
-    if(connected[path.back()][there]) {
-      // 가능한 마을 다 넣어보고 확률 더해줌
-      path.push_back(there);
-      ret += search(path);
-      path.pop_back();
-    }
-  }
-  return ret;
 }
+
+double ret=0;
+
+for(int there=0; there<n; ++there) {
+if(connected[path.back()][there]) {
+// 가능한 마을 다 넣어보고 확률 더해줌
+path.push_back(there);
+ret += search(path);
+path.pop_back();
+}
+}
+return ret;
+}
+
 ```
 
 위의 설계 과정을 적용
