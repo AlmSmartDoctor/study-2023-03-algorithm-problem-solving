@@ -280,7 +280,7 @@ double search3(int here, int days) {
       ret += search3(there,days-1) / deg[there];
   }
 
-  return ret;
+  return ret; 
 }
 ```
 
@@ -293,18 +293,20 @@ search3 -> O(n^2\*d) -> 경로의 반대쪽 끝q 부터 경로를 만듦
 <br>
 <hr/>
 
-유태정:
+유태정: https://leetcode.com/problems/maximum-subarray/
 
-김하진:
+김하진:https://leetcode.com/problems/edit-distance/
 
-박진영:
+박진영:https://leetcode.com/problems/unique-binary-search-trees/
+                                                                  
+서민혁: https://www.acmicpc.net/problem/24888
 
-서민혁:
+이재혁: https://www.acmicpc.net/problem/1106
 
-이재혁:
+이성구: https://www.acmicpc.net/problem/2293
 
-이성구:
+김재헌: https://www.acmicpc.net/problem/1231
 
-김재헌:
+한태혁: https://leetcode.com/problems/predict-the-winner/
 
-한태혁:
+박상준: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
