@@ -293,7 +293,7 @@ search3 -> O(n^2\*d) -> 경로의 반대쪽 끝q 부터 경로를 만듦
 <br>
 <hr/>
 
-유태정: https://leetcode.com/problems/maximum-subarray/
+유태정: https://www.acmicpc.net/problem/2705
 
 김하진:https://leetcode.com/problems/edit-distance/
 
