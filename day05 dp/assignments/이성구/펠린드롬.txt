@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+
+
+using namespace std;
+#define endl '\n'
+#define fast_io ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+
+
+int n, k;
+
+int dp[1001];
+
+int recursive(int n) {
+    if (n < 1) return 0;
+    if (n < 2) return 1;
+
+    int &cur = dp[n];
+    if (cur != -1) return cur;
+
+    cur = 1;
+    for (int i = 1; i <= n / 2; i++) {
+        cur += recursive(i);
+    }
+    return cur;
+}
+
+
+void solve(int testcase) {
+    int m;
+    cin >> m;
+    cout << recursive(m) << endl;
+}
+
+int main() {
+    fast_io;
+    memset(dp, -1, sizeof(dp));
+    int t;
+    cin >> t;
+    rep(i, t)solve(i);
+
+    return 0;
+}
