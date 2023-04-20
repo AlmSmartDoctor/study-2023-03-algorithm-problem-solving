@@ -305,7 +305,7 @@ search3 -> O(n^2\*d) -> 경로의 반대쪽 끝q 부터 경로를 만듦
 
 이성구: https://www.acmicpc.net/problem/2293
 
-김재헌: https://www.acmicpc.net/problem/1231
+김재헌: https://www.acmicpc.net/problem/12105
 
 한태혁: https://leetcode.com/problems/predict-the-winner/
 
