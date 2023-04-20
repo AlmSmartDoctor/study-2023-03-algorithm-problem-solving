@@ -1,9 +1,43 @@
+https://www.acmicpc.net/problem/2705
 #include<bits/stdc++.h>
 
 
 using namespace std;
 #define endl '\n'
 #define fast_io ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+
+재귀적인 펠린드롬의 개수를 구하는 것이 문제이다.
+펠린드롬은 12321 111 1221같이 가운데 축을 기준으로 대칭을 이루는 애들이다.
+
+문제는 여기서 특정 값 n이 주어졌을 때 
+해당 n값을 파티션을 나누어 가면서 나올 수 있는 펠린드롬의 최대 갯수를 구하는 것이다.
+
+n이 4일때
+4
+2 2
+1 1 1 1
+1 2 1으로 총 4가지 경우의 수가 존재한다.
+
+7의 경우는
+3 1 3
+1 1 1 1 1 1 1
+2 3 2
+1 1 3 1 1
+1 5 1
+7로 6가지가 나온다.
+
+
+이때 가운데에 오는 숫자가 i라고 해보자.
+그러면 양옆으로 나오는 수는 (n - i)/2가 나오게 된다. 
+
+그럼 가운데 숫자가 i일때 나올 수 있는 파티션의 수는 (n - i)/2의 파티션의 수이다.
+가운데에 i는 0부터 n까지 올 수 있다.
+
+즉 점화식을 정리하면 recursive(n) = 1 + recursive(0).... recursive(n/2)가 나오는 것이다.(1은 자기자신)
+
+여기서 의문인 점이 생길 수 있는데, n-i가 홀수인 경우 펠린드롬을 만들 수가 없어서 더하지 않는 것입니다.
+
+
 
 
 int n, k;
@@ -17,9 +51,9 @@ int recursive(int n) {
     int &cur = dp[n];
     if (cur != -1) return cur;
 
-    cur = 1;
-    for (int i = 1; i <= n / 2; i++) {
-        cur += recursive(i);
+    cur = 1;//자기 자신
+    for (int i = 0; i <= n / 2; i++) {// 자동으로 홀수인 경우는 제외가 됨. 여기서의 i는 가운데의 숫자가 아닌 빼고 남은 수를 2로 나눈 수라고 생각하삼.
+        cur += recursive(i);// 코드 가독성을 위해 이렇게 작성함.
     }
     return cur;
 }
