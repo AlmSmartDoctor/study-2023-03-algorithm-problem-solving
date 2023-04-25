@@ -205,6 +205,6 @@ void int repeat_matrix_multiplication(int n)
 
 김재헌: https://www.acmicpc.net/problem/2695
 
-한태혁: 
+한태혁: https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/
 
 박상준: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
