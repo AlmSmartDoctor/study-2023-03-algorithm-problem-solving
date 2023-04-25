@@ -201,7 +201,7 @@ void int repeat_matrix_multiplication(int n)
 
 이재혁: 
 
-이성구: 
+이성구: https://www.acmicpc.net/problem/2294 OR https://www.acmicpc.net/problem/2293
 
 김재헌: 
 
