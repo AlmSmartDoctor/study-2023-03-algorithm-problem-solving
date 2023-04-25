@@ -191,20 +191,20 @@ void int repeat_matrix_multiplication(int n)
 
 # 문제 풀이
 
-유태정: 
+유태정: https://www.acmicpc.net/problem/11066
 
 김하진: 
 
-박진영: 
+박진영: https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/
                                                                   
-서민혁: 
+서민혁: https://www.acmicpc.net/problem/10273
 
-이재혁: 
+이재혁: https://www.acmicpc.net/problem/1099
 
 이성구: https://www.acmicpc.net/problem/2294 OR https://www.acmicpc.net/problem/2293
 
-김재헌: 
+김재헌: https://www.acmicpc.net/problem/2695
 
 한태혁: 
 
-박상준: 
+박상준: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
