@@ -199,7 +199,7 @@ void int repeat_matrix_multiplication(int n)
                                                                   
 서민혁: https://www.acmicpc.net/problem/10273
 
-이재혁: https://www.acmicpc.net/problem/1099
+이재혁: https://www.acmicpc.net/problem/4811
 
 이성구: https://www.acmicpc.net/problem/2294 OR https://www.acmicpc.net/problem/2293
 
