@@ -197,7 +197,7 @@ void int repeat_matrix_multiplication(int n)
 
 박진영: https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/
                                                                   
-서민혁: https://www.acmicpc.net/problem/10273
+서민혁: https://www.acmicpc.net/problem/1256
 
 이재혁: https://www.acmicpc.net/problem/4811
 
