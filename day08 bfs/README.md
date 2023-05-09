@@ -359,7 +359,7 @@ int ids(State start, State finish, int growthStep)
 
 박진영:https://leetcode.com/problems/the-maze/
 
-서민혁:
+서민혁: https://www.acmicpc.net/problem/13460
 
 이재혁:
 
