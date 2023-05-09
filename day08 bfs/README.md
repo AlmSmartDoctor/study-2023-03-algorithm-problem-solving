@@ -363,7 +363,7 @@ int ids(State start, State finish, int growthStep)
 
 이재혁:
 
-이성구:
+이성구: https://www.acmicpc.net/problemset?sort=ac_desc&algo=7
 
 김재헌:
 
