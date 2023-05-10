@@ -353,11 +353,11 @@ int ids(State start, State finish, int growthStep)
 
 # 문제 풀이
 
-유태정:
+유태정: https://www.acmicpc.net/problem/13023
 
 김하진:
 
-박진영:https://leetcode.com/problems/the-maze/
+박진영: https://leetcode.com/problems/the-maze/
 
 서민혁: https://www.acmicpc.net/problem/13460
 
