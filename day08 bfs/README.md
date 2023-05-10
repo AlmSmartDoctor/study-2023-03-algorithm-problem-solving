@@ -365,7 +365,7 @@ int ids(State start, State finish, int growthStep)
 
 이성구: https://www.acmicpc.net/problemset?sort=ac_desc&algo=7
 
-김재헌:
+김재헌: https://www.acmicpc.net/problem/2536
 
 한태혁:
 
