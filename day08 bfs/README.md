@@ -367,7 +367,7 @@ int ids(State start, State finish, int growthStep)
 
 김재헌: https://www.acmicpc.net/problem/2536
 
-한태혁:
+한태혁: https://leetcode.com/problems/number-of-islands/
 
 박상준: https://leetcode.com/problems/longest-increasing-path-in-a-matrix/
 
