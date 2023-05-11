@@ -355,7 +355,7 @@ int ids(State start, State finish, int growthStep)
 
 유태정: https://www.acmicpc.net/problem/13023
 
-김하진:
+김하진: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
 
 박진영: https://leetcode.com/problems/the-maze/
 
