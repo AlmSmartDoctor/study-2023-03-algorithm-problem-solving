@@ -355,7 +355,7 @@ int ids(State start, State finish, int growthStep)
 
 유태정: https://www.acmicpc.net/problem/13023
 
-김하진:
+김하진: https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
 
 박진영: https://leetcode.com/problems/the-maze/
 
@@ -367,7 +367,7 @@ int ids(State start, State finish, int growthStep)
 
 김재헌: https://www.acmicpc.net/problem/2536
 
-한태혁:
+한태혁: https://leetcode.com/problems/number-of-islands/
 
 박상준: https://leetcode.com/problems/longest-increasing-path-in-a-matrix/
 
