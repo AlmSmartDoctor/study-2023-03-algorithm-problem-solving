@@ -68,7 +68,7 @@
 
 1부터 N까지 순서대로 숫자가 추가되었다고 해봅시다. 
 
-[image](https://postfiles.pstatic.net/MjAxODEwMDVfMTkw/MDAxNTM4NzEyODA4Mzkw.D5sepz5FVt25JXtJGzM-qQ08APGSMwF881NmkbNOFRIg.4xbH5ZPNXffUgksINhHydyE-vil3VEtm87gos0q9p6sg.GIF.qbxlvnf11/94_b.gif?type=w773)
+![image](https://postfiles.pstatic.net/MjAxODEwMDVfMTkw/MDAxNTM4NzEyODA4Mzkw.D5sepz5FVt25JXtJGzM-qQ08APGSMwF881NmkbNOFRIg.4xbH5ZPNXffUgksINhHydyE-vil3VEtm87gos0q9p6sg.GIF.qbxlvnf11/94_b.gif?type=w773)
 
 위의 그림처럼 편향트리가 되어 버립니다. 이 경우 노드 개수는 5개이지만 높이도 5가 되어버립니다. 사실상 일방향 연결리스트와 동일한 구조입니다.
 
