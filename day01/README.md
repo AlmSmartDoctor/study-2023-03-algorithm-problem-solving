@@ -167,15 +167,36 @@ double shortestPath(vector<int>& path, vector<bool>& visited, double currentLeng
 ## 문제 정하기
 
 김재헌: https://www.acmicpc.net/problem/1035
+문제 텍스ㅌ 이슈
+난이도 적절
+8/10
 
 김하진: https://www.acmicpc.net/problem/2468
+ㄱㅊ
+ㄱㅊ
+9/10
 
 박진영: https://www.acmicpc.net/problem/2082
+ㄱㅊ
+쉬웠음
+7
 
 서민혁: https://www.acmicpc.net/problem/1664
+귀찮
+고려할게 많아서 좀 어려웠다
+7
 
 유태정: https://www.acmicpc.net/problem/1101
+헷갈림 (조건 나눠서 체크하기가 복잡함)
+어렵진 않은데 까다로움
+4
 
 이성구: https://www.acmicpc.net/problem/1062
+ㄱㅊ
+보통
+9
 
 이재혁: https://www.acmicpc.net/problem/1941
+ㄱㅊ
+ㄱㅊ
+9

@@ -217,15 +217,37 @@ struct RNG {
 # 문제풀이
 
 유태정: https://www.acmicpc.net/problem/11899
+ㄱㅊ
+쉬웠음
+8
 
 이성구: https://www.acmicpc.net/problem/25096
+ㄱㅊ
+쉽다 연습문제로 ㄱㅊ
+9
 
 이재혁: https://www.acmicpc.net/problem/2841
+예외 처리가 하나 있었음 (텍스트 이슈는 아님)
+그거 빼면 쉬웠다
+7
 
 서민혁: https://www.acmicpc.net/problem/20960
+울타리문제랑 비슷
+평범
+8
 
-김재헌: https://www.acmicpc.net/problem/14035
+김재헌: https://www.acmicpc.net/problem/14035 (바뀜) -> 그래프 문제여서
+https://www.acmicpc.net/problem/5577
+괜찮은 문제
+가지치기가 어려울 수 있는데 그렇게 어렵지는 않았고
+8
 
 박진영: https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/description/
+쉬웠음
+쉬웠음
+5
 
 김하진: https://leetcode.com/problems/dota2-senate/submissions/925102084/
+괜찮음 다만 상황에 대한 텍스트 이슈가 약간 있을수도
+쉽다 내지 적절하다
+7

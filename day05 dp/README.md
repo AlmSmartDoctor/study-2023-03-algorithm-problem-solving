@@ -294,19 +294,44 @@ search3 -> O(n^2\*d) -> 경로의 반대쪽 끝q 부터 경로를 만듦
 <hr/>
 
 유태정: https://www.acmicpc.net/problem/2705
+좋은 문제! DP에 딱맞다
+난이도도 괜찮음
+9
 
 김하진:https://leetcode.com/problems/maximum-product-subarray/
+그렇게 어렵진 않다. +0- 고려.
+적당~조금어려움.
+7
 
 박진영:https://leetcode.com/problems/unique-binary-search-trees/
-                                                                  
+딱 dp다. 좌우중복 안되고 유니크.. 조건 까다로웠다.
+medium
+8
+
 서민혁: https://www.acmicpc.net/problem/24888
+dp 메모이제이션 기준 생각하기 어려웠다. 매우. 귀찮지는 않았다. OoO
+골드1? ㄴㄴ 플레정도
+9
 
 이재혁: https://www.acmicpc.net/problem/1106
+9 추천 책이랑 적절 완젼9 누구보다9 딱 9
+9
+9
 
 이성구: https://www.acmicpc.net/problem/2293
+&유태정
 
 김재헌: https://www.acmicpc.net/problem/12105
+교육적이었다. 수학도 쓰고. 
+적당~조금어렵
+9
 
 한태혁: https://leetcode.com/problems/predict-the-winner/
+무난한 dp였다.
+안어려웠다. 그냥 무난.
+한 8점?
 
 박상준: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+쉬웠다. 하지만 초보용. 중수에겐 dog노잼. 나에게 감히 이런 문제를..
+ez
+5

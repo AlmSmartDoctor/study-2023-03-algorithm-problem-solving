@@ -222,19 +222,46 @@ int concat(const vector<int>& lengths) {
 ---
 
 유태정: https://www.acmicpc.net/problem/1636
+매우 어려움
+매우 어려움
+5
 
 김하진:https://leetcode.com/problems/strong-password-checker/
+그리디 떠올리기 어렵고, 조건이 많은 편
+전형적인 hard
+6
 
 박진영:https://leetcode.com/problems/container-with-most-water/
+그리디 떠올리기 어려움 근데 답을 보면 그리디
+어려움
+8
 
 서민혁: https://www.acmicpc.net/problem/1036
+그리디는 명확한데 36진수가 귀찮음
+평범
+3 (그리디 비중이 낮음)
 
 이재혁: https://www.acmicpc.net/problem/6068
+정렬
+정렬
+6
 
 이성구: https://www.acmicpc.net/problem/2879
+그리디 강추
+체감 실버1~골드4
+10
 
 김재헌: https://www.acmicpc.net/problem/19700
+교육적 very good
+골드1 적당
+9
 
 한태혁: https://leetcode.com/problems/earliest-possible-day-of-full-bloom/
+그리디로 적절, 그림있어서 좋앗다
+hard치곤 쉬웠다
+9
 
 박상준: https://leetcode.com/problems/partition-labels/
+무난. 개성이 있지는 않다
+어렵지는 않다.
+6

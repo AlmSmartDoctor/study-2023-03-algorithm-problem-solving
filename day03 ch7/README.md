@@ -219,17 +219,38 @@ int solve(int left, int right) {
 # 문제풀이
 
 유태정: https://www.acmicpc.net/problem/2447
+마음에 들었음
+약간 중상
+10 심미성 점수 웅장함 점수
 
 김하진: https://leetcode.com/problems/merge-k-sorted-lists/
+전형적인 divide n conquer
+쉬웠음 hard문제는 아닌데 그놈의 ListNode
+7
 
 박진영: https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/
+무난
+딱 medium
+8
 
 서민혁: https://www.acmicpc.net/problem/1588
+귀찮음. 다만 분할정복하기 괜찮음
+상
+7
 
 이재혁 : https://www.acmicpc.net/problem/1493
+공간지각능력이 필요
+무난
+8
 
 이성구 : https://leetcode.com/problems/median-of-two-sorted-arrays/
+좋음
+하드치고 쉬움
+10
 
 김재헌 : https://www.acmicpc.net/problem/1634
+관찰이 필요
+매우 어려움 근데 재밌음
+10
 
 ++++++++
