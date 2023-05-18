@@ -230,7 +230,7 @@ void removeDominated(int x, int y)
 
 김재헌:
 
-한태혁:
+한태혁: https://leetcode.com/problems/serialize-and-deserialize-bst/
 
 박상준: https://www.codewars.com/kata/571a551a196bb0567f000603
 
