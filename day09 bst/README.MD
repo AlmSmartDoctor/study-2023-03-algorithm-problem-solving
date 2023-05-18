@@ -216,7 +216,7 @@ void removeDominated(int x, int y)
 
 # 문제 풀이
 
-유태정:
+유태정: https://www.acmicpc.net/problem/7662
 
 김하진:
 
