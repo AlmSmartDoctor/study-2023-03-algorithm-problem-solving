@@ -228,7 +228,7 @@ void removeDominated(int x, int y)
 
 이성구: https://leetcode.com/problems/recover-binary-search-tree/submissions/952722304/
 
-김재헌:
+김재헌: https://www.acmicpc.net/problem/9798
 
 한태혁: https://leetcode.com/problems/serialize-and-deserialize-bst/
 
