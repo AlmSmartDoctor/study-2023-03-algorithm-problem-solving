@@ -226,7 +226,7 @@ void removeDominated(int x, int y)
 
 이재혁:
 
-이성구:
+이성구: https://leetcode.com/problems/recover-binary-search-tree/submissions/952722304/
 
 김재헌:
 
