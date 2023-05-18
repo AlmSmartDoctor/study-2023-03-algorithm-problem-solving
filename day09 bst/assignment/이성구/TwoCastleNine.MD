@@ -1,35 +1,33 @@
 
 https://leetcode.com/problems/recover-binary-search-tree/submissions/952722304/
 
-
-
 ```kotlin
 class Solution {
     fun recoverTree(root: TreeNode?): Unit {
         var first: TreeNode? = null
         var second: TreeNode? = null
-        
-        var pre: TreeNode = TreeNode(Int.MIN_VALUE)
-        
-        fun inorder(root: TreeNode?) {
+
+        var preNode: TreeNode = TreeNode(Int.MIN_VALUE)
+
+        fun recursive(root: TreeNode?) {
             if (root == null) return
-            
-            inorder(root.left)
-            
-            if (first == null && pre.`val` > root.`val`) {
-                first = pre
+
+            recursive(root.left)
+
+            if (first == null && preNode.`val` > root.`val`) {
+                first = preNode
             }
-            
-            if (first != null && pre.`val` > root.`val`) {
+
+            if (first != null && preNode.`val` > root.`val`) {
                 second = root
             }
-            
-            pre = root
-            
-            inorder(root.right)
+
+            preNode = root
+
+            recursive(root.right)
         }
-        
-        inorder(root)
+
+        recursive(root)
         val temp = first!!.`val`
         first!!.`val` = second!!.`val`
         second!!.`val` = temp
