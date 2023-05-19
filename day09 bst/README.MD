@@ -222,7 +222,7 @@ void removeDominated(int x, int y)
 
 박진영: https://leetcode.com/problems/trim-a-binary-search-tree/
 
-서민혁:
+서민혁: https://www.acmicpc.net/problem/2957
 
 이재혁: https://www.acmicpc.net/problem/1620
 
