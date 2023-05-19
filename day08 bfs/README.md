@@ -115,7 +115,8 @@ vector<int> bfs(int start){
 
 - 너비 우선 탐색에서 새 정점을 발견하는 데 사용했던 간선들만 모든 트리
 - ChatGPT 피셜:
-  ```
+
+  ````
   가장 가까운 친구 찾기: 소셜 미디어 플랫폼에서 특정 사용자의 친구를 찾는 경우, BFS 스패닝 트리 알고리즘을 사용하여 해당 사용자와의 가장 가까운 친구를 찾을 수 있습니다.
 
       네트워크 탐색: 컴퓨터 네트워크에서 호스트 간의 연결을 찾는 경우, BFS 스패닝 트리 알고리즘을 사용하여 호스트 간의 최단 경로를 찾을 수 있습니다.
@@ -124,6 +125,7 @@ vector<int> bfs(int start){
       ```
 
   ![Image](https://mblogthumb-phinf.pstatic.net/MjAxNzAyMDhfMTE4/MDAxNDg2NTE4ODM3OTIx.6_qGO1ZzousyKtEL0mKF0Hep3TgWbDjp1kDrtOhK64gg.TzbTyfwvZSRNeaCT-5XQwShsX8xM5lySv9weDcr7ooMg.PNG.bumsou10/%EA%B7%B8%EB%A6%BC3.png?type=w2)
+  ````
 
 <br>
 
@@ -361,7 +363,7 @@ int ids(State start, State finish, int growthStep)
 
 서민혁: https://www.acmicpc.net/problem/13460
 
-이재혁:
+이재혁: https://www.acmicpc.net/problem/2665
 
 이성구: https://www.acmicpc.net/problemset?sort=ac_desc&algo=7
 

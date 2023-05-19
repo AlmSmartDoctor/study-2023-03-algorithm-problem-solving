@@ -1,11 +1,15 @@
+# https://www.acmicpc.net/problem/1620
+
 import sys
 
 input = sys.stdin.readline
 
 
+# bst 구현
 class Node:
     def __init__(self, pokemon=None, idx=None):
         self.pokemon = pokemon
+        # 문제에 포켓몬 이름 -> index 리턴해야하므로
         self.idx = idx
         self.left = None
         self.right = None
@@ -21,12 +25,14 @@ class BST:
         current = self.parent
 
         while current:
+            # 부모에서 시작
             parent = current
             if node.pokemon < current.pokemon:
                 current = current.left
             else:
                 current = current.right
 
+        # tree가 비어있는 경우
         if parent is None:
             self.parent = node
         elif node.pokemon < parent.pokemon:
@@ -36,8 +42,8 @@ class BST:
 
     def search(self, pokemon):
         node = self.parent
-
         while True:
+            # tree가 비었거나 데이터가 없음
             if node == None:
                 return node
             elif node.pokemon == pokemon:
