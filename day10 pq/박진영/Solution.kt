@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/kth-largest-element-in-a-stream/description/
 /**
  * 최초시도 -> bruteforce(
- *  - 3이상이면 대충 넣고
+ *  - 3이상이면 대충 넣
  *  - 아니면 제대로 넣고
 class KthLargest(k: Int, nums: IntArray) {
 
@@ -30,14 +30,16 @@ class KthLargest(private val k: Int, nums: IntArray) {
 
     init {
         pq.addAll(nums.asIterable())
-        while(pq.size> k) {
+        while (pq.size > k) {
             pq.poll()
         }
     }
 
-    fun add(`val` : Int) : Int {
+    fun add(`val`: Int): Int {
         pq.add(`val`)
-        pq.poll()
+        if (pq.size > k) {
+            pq.poll()
+        }
         return pq.first()
     }
 
