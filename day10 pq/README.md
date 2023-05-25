@@ -177,4 +177,4 @@ int runningMedian(int n, RNG rng) {
 
 조민준: https://www.acmicpc.net/problem/3090
 
-정준우:
+정준우: https://leetcode.com/problems/kth-largest-element-in-an-array/
