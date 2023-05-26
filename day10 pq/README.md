@@ -157,7 +157,7 @@ int runningMedian(int n, RNG rng) {
 
 # 문제 풀이
 
-유태정:
+유태정: https://www.acmicpc.net/problem/11000
 
 김하진:
 
