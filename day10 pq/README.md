@@ -159,7 +159,7 @@ int runningMedian(int n, RNG rng) {
 
 유태정: https://www.acmicpc.net/problem/11000
 
-김하진:
+김하진: https://leetcode.com/problems/merge-k-sorted-lists/
 
 박진영:
 
