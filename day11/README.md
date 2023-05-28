@@ -2,7 +2,7 @@
 
 **최단 경로 알고리즘**은 주어진 그래프에서 주어진 두 정점을 연결하는 가장 짧은 경로의 길이를 찾는 알고리즘입니다.
 
-가중치가 없는 그래프에서는 너비 우선 탐색으로 구할 수 있었습니다.
+이전에 살펴봤다시피 가중치가 없는 그래프에서는 너비 우선 탐색으로 구할 수 있었습니다.
 
 여기서는 가중치가 있는 그래프만을 다루며, 음수 가중치를 갖는 간선이 있을 수 있습니다.
 
@@ -48,8 +48,6 @@
 
 기본적인 아이디어는 너비 우선 탐색과 동일하며, 너비 우선 탐색과 달리 *우선순위 큐*를 사용합니다.
 
-정점의 개수가 $V$, 간선의 개수가 $E$일 때, 다익스트라 알고리즘의 시간복잡도는 $O(ElgV)$입니다.
-
 <br>
 
 ### 작동방식
@@ -64,20 +62,96 @@
 
 구체적으로는 아래의 과정을 거칩니다.
 
-1. 시작점으로부터 각 정점까지의 최단 거리를 저장하는 배열 `dist[]`를 `inf`로 초기화합니다.
-1. `dist[src]`의 값을 `0`으로 대입합니다. (시작점)
-1. 우선순위 큐에 `(src, 0)`을 삽입합니다.
-1. 우선순위 큐가 다 비어질 때까지 다음을 반복합니다.
-   1. 우선순위 큐에서 현재 정점과 현재 최단 거리 쌍을`(here, cost)` 꺼냅니다.
-   1. 만약 `dist[here]`가 현재 `cost`보다 작다면 지금 꺼낸 것을 무시합니다.
-   1. 현재 정점에 인접한 정점들을 모두 검사합니다.
-      1. 이웃 정점(`there`)까지의 거리를 갱신합니다.
-      1. 그 거리가 `dist[there]`에 저장된 값보다 짧다면 우선순위 큐에 해당 정점을 삽입합니다.
-1. 위 과정을 마치면 `dist[]`에는 최단 거리가 모두 저장됩니다.
+![다익스트라 0단계](imgs/4.png)
 
-[이러한 과정을 잘 보여주는 그림을 봅시다.](https://m.blog.naver.com/kks227/220796029558?view=img_1)
+| s     | a   | b   | c   | d   | e   |
+| ----- | --- | --- | --- | --- | --- |
+| **0** | INF | INF | INF | INF | INF |
 
-[코드는 이렇게 작성됩니다.](dijkstra.cc)
+![다익스트라 1단계](imgs/5.png)
+
+| s   | a     | b     | c   | d   | e      |
+| --- | ----- | ----- | --- | --- | ------ |
+| 0   | **7** | **9** | INF | INF | **14** |
+
+![다익스트라 2단계](imgs/6.png)
+
+| s   | a   | b     | c      | d   | e   |
+| --- | --- | ----- | ------ | --- | --- |
+| 0   | 7   | **9** | **22** | INF | 14  |
+
+![다익스타라 3단계](imgs/7.png)
+
+| s   | a   | b   | c      | d   | e      |
+| --- | --- | --- | ------ | --- | ------ |
+| 0   | 7   | 9   | **20** | INF | **11** |
+
+![다익스트라 4단계](imgs/8.png)
+
+| s   | a   | b   | c   | d      | e   |
+| --- | --- | --- | --- | ------ | --- |
+| 0   | 7   | 9   | 20  | **20** | 11  |
+
+![다익스트라 5단계](imgs/9.png)
+
+| s   | a   | b   | c   | d   | e   |
+| --- | --- | --- | --- | --- | --- |
+| 0   | 7   | 9   | 20  | 20  | 11  |
+
+![다익스트라 6단계](imgs/10.png)
+
+| s   | a   | b   | c   | d   | e   |
+| --- | --- | --- | --- | --- | --- |
+| 0   | 7   | 9   | 20  | 20  | 11  |
+
+이러한 과정을 코드로 작성하면 아래와 같습니다.
+
+```cpp
+#define MAX_V 100
+#define INF 987654321
+
+#include <vector>
+#include <queue>
+
+using namespace std;
+
+int V;
+vector<pair<int, int> > adj[MAX_V];
+
+vector<int> dijkstra(int src) {
+    vector<int> dist(V, INF);
+    dist[src] = 0;
+
+    priority_queue<pair<int, int>, vector<pair<int, int> >, greater<pair<int,int> > > pq;
+    pq.push(make_pair(0, src));
+
+    while (!pq.empty()) {
+        int cost = pq.top().first;
+        int here = pq.top().second;
+        pq.pop();
+
+        if (dist[here] < cost) continue;
+
+        for (const auto& [there, length] : adj[here]) {
+            int nextDist = cost + length;
+
+            if (nextDist < dist[there]) {
+                dist[there] = nextDist;
+                pq.push(make_pair(nextDist, there));
+            }
+        }
+    }
+    return dist;
+}
+```
+
+### 시간복잡도
+
+정점의 개수가 $V$, 간선의 개수가 $E$일 때, 다익스트라 알고리즘의 시간복잡도는 $O(ElgV)$입니다.
+
+모든 간선을 한 번씩만 검사하며, 모든 정점이 한 번 이상 우선순위 큐에 들어가기 때문입니다.
+
+<br>
 
 ## 벨만-포드
 
@@ -123,9 +197,47 @@ $(a, b) \rightarrow (b, c) \rightarrow (c, a)$ 의 사이클을 돌 때마다 �
 
 결론적으로, 벨만 포드 알고리즘의 시간 복잡도는 $O(VE)$입니다.
 
+코드는 아래와 같이 작성됩니다.
+
 <br>
 
-[코드는 이렇게 작성됩니다.](bellmanFord.cc)
+```cpp
+#define MAX_V 100
+#define INF 987654321
+
+#include <utility>
+#include <vector>
+
+using namespace std;
+
+int V;
+vector<pair<int, int> > adj[MAX_V];
+
+vector<int> bellmanFord(int src) {
+    vector<int> upper(V, INF);
+    upper[src] = 0;
+
+    bool updated;
+    for (int iter = 0; iter < V; ++iter) {
+        updated = false;
+
+        for (int here = 0; here < V; ++here) {
+            for (const auto& [there, cost] : adj[here]) {
+                if (upper[here] != INF && upper[there] > upper[here] + cost) {
+                    upper[there] = upper[here] + cost;
+                    updated = true;
+                }
+            }
+        }
+
+        if (!updated) break;
+    }
+
+    if (updated) upper.clear();
+
+    return upper;
+}
+```
 
 <br>
 
@@ -176,7 +288,28 @@ $(a, b) \rightarrow (b, c) \rightarrow (c, a)$ 의 사이클을 돌 때마다 �
 
 <br>
 
-[코드는 이렇게 작성됩니다.](floyd.cc)
+코드는 아래와 같이 작성됩니다.
+
+```cpp
+#define MAX_V 100
+#define INF 987654321
+
+#include <vector>
+
+using namespace std;
+
+int V;
+int adj[MAX_V][MAX_V];
+
+void floyd() {
+    for (int i = 0; i < V; ++i) adj[i][i] = 0;
+
+    for (int k = 0; k < V; ++k)
+        for (int i = 0; i < V; ++i)
+            for (int j = 0; j < V; ++j)
+                adj[i][j] = min(adj[i][j], adj[i][k] + adj[k][j]);
+}
+```
 
 <br>
 
