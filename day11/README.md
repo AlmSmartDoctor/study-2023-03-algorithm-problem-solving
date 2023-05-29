@@ -177,6 +177,53 @@ vector<int> dijkstra(int src) {
 }
 ```
 
+### 실제 경로 구하기
+
+너비 우선 탐색에서 살펴봤던대로 스패닝 트리를 계산하여 구할 수 있습니다.
+
+```diff cpp
+#define MAX_V 100
+#define INF 987654321
+
+#include <vector>
+#include <queue>
+
+using namespace std;
+
+int V;
+vector<pair<int, int> > adj[MAX_V];
+
+vector<int> dijkstra(int src) {
+    vector<int> dist(V, INF);
++   // 너비 우선 탐색 스패닝 트리에서 i의 부모의 번호. 루트인 경우 자신의 번호
++   vector<int> parent(V, -1);
+    dist[src] = 0;
+    parent[src] = src;
+
+    priority_queue<pair<int, int>, vector<pair<int, int> >, greater<pair<int,int> > > pq;
+    pq.push(make_pair(0, src));
+
+    while (!pq.empty()) {
+        int cost = pq.top().first;
+        int here = pq.top().second;
+        pq.pop();
+
+        if (dist[here] < cost) continue;
+
+        for (const auto& [there, length] : adj[here]) {
+            int nextDist = cost + length;
+
+            if (nextDist < dist[there]) {
+                dist[there] = nextDist;
+                pq.push(make_pair(nextDist, there));
++               parent[there] = here; // 스패닝 트리 부모 갱신
+            }
+        }
+    }
+    return dist;
+}
+```
+
 ### 시간복잡도
 
 정점의 개수가 $V$, 간선의 개수가 $E$일 때, 다익스트라 알고리즘의 시간복잡도는 $O(ElgV)$입니다.
@@ -352,6 +399,78 @@ void floyd() {
 ```
 
 <br>
+
+### 최적화
+
+1. `i`에서 `k`로 가는 경로가 있는지 검사
+
+   이러면 시간복잡도는 변하지 않지만 10%에서 20%까지 수행 시간이 단축된다고 합니다.
+
+```diff cpp
+#define MAX_V 100
+#define INF 987654321
+
+#include <vector>
+
+using namespace std;
+
+int V;
+int adj[MAX_V][MAX_V]; // 인접 행렬
+
+void floyd() {
+    for (int i = 0; i < V; ++i) adj[i][i] = 0;
+
+    for (int k = 0; k < V; ++k)
+        for (int i = 0; i < V; ++i)
++            if (adj[i][k] < INF) // 경로가 있는지 검사
+                for (int j = 0; j < V; ++j)
+                    adj[i][j] = min(adj[i][j], adj[i][k] + adj[k][j]);
+}
+```
+
+### 실제 경로 구하기
+
+실제 경로를 구하는 방법은 단일 시작점 알고리즘들과 조금 다릅니다.
+
+```diff cpp
+#define MAX_V 100
+#define INF 987654321
+
+#include <vector>
+
+using namespace std;
+
+int V;
+int adj[MAX_V][MAX_V];
++int via[MAX_V][MAX_V];
+
+void floyd() {
+    for (int i = 0; i < V; ++i) adj[i][i] = 0;
++   memset(via, -1, sizeof(via));
+
+    for (int k = 0; k < V; ++k)
+        for (int i = 0; i < V; ++i)
+            for (int j = 0; j < V; ++j)
+-               adj[i][j] = min(adj[i][j], adj[i][k] + adj[k][j]);
++               if (adj[i][j] > adj[i][k] + adj[k][j]) {
++                   via[i][j] = k;
++                   adj[i][j] = adj[i][k] + adj[k][j];
++               }
+}
+
++void reconstruct(int u, int v, vector<int>& path) {
++    if (via[u][v] == -1) {
++        path.push_back(u);
++        if (u != v) path.push_back(v);
++    }
++    else {
++        int w = via[u][v];
++        reconstruct(u, w, path);
++        path.pop_back() // w가 중복으로 들어가므로 지운다.
++        reconstruct(w, v, path);
++    }
++}
+```
 
 ## 정리
 
