@@ -514,7 +514,7 @@ void floyd() {
 
 김재헌: https://www.acmicpc.net/problem/2176
 
-박상준:
+박상준: https://leetcode.com/problems/network-delay-time/
 
 박진영: https://leetcode.com/problems/cheapest-flights-within-k-stops/
 
