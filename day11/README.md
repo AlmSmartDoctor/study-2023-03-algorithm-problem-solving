@@ -526,7 +526,7 @@ void floyd() {
 
 이성구:
 
-조민준:
+조민준: https://www.acmicpc.net/problem/14221
 
 정준우:
 
