@@ -520,7 +520,7 @@ void floyd() {
 
 서민혁:
 
-유태정:
+유태정: https://www.acmicpc.net/problem/11779
 
 이재혁:
 
