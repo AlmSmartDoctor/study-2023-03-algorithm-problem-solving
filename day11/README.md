@@ -518,7 +518,7 @@ void floyd() {
 
 박진영: https://leetcode.com/problems/cheapest-flights-within-k-stops/
 
-서민혁:
+서민혁: https://www.acmicpc.net/problem/1238
 
 유태정: https://www.acmicpc.net/problem/11779
 
