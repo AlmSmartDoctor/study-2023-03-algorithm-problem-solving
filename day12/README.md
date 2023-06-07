@@ -133,9 +133,9 @@ N개의 도시가 도로망으로 연결되어 있는데, 각 도로는 정확�
 
 문제 풀이
 관련 문제 목록 바로가기
-solved.ac | LeetCode
+[solved.ac | LeetCode](https://solved.ac/search?query=%23disjoint_set+-%23mst&sort=solved&direction=desc&page=1)
 
-김하진:
+김하진: 
 
 김재헌: 
 
@@ -143,15 +143,15 @@ solved.ac | LeetCode
 
 박진영: 
 
-서민혁: 
+서민혁: https://www.acmicpc.net/problem/16402
 
-유태정: 
+유태정: https://www.acmicpc.net/problem/17352
 
-이재혁:
+이재혁: https://www.acmicpc.net/problem/16562
 
-이성구:
+이성구: https://www.acmicpc.net/problem/1976
 
-조민준: 
+조민준: https://www.acmicpc.net/problem/15956
 
 정준우:
 
