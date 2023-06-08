@@ -150,11 +150,11 @@ N개의 도시가 도로망으로 연결되어 있는데, 각 도로는 정확�
 
 김하진:
 
-김재헌:
+김재헌: https://www.acmicpc.net/problem/1466
 
 박상준: https://www.acmicpc.net/problem/1717
 
-박진영:
+박진영: https://www.acmicpc.net/problem/1765
 
 서민혁: https://www.acmicpc.net/problem/16402
 
@@ -168,4 +168,4 @@ N개의 도시가 도로망으로 연결되어 있는데, 각 도로는 정확�
 
 정준우:
 
-한태혁:
+한태혁: https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/submissions/
