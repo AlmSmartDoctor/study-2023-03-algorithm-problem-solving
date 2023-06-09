@@ -164,7 +164,7 @@ N개의 도시가 도로망으로 연결되어 있는데, 각 도로는 정확�
 
 이성구: https://www.acmicpc.net/problem/1976
 
-조민준: https://www.acmicpc.net/problem/15956
+조민준: https://www.acmicpc.net/problem/15559
 
 정준우:
 
