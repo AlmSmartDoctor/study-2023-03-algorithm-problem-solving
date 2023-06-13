@@ -265,3 +265,25 @@ E log E vs V^2
 ### ElogE = V^2 그래프
 
 ![wolframAlpha](wolframAlpha.png)
+
+김하진:
+
+김재헌: 
+
+박상준: 
+
+박진영: 
+
+서민혁: 
+
+유태정: 
+
+이재혁: 
+
+이성구: 
+
+조민준: 
+
+정준우: 
+
+한태혁: https://leetcode.com/problems/min-cost-to-connect-all-points/
