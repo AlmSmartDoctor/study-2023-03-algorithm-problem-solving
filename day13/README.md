@@ -274,7 +274,7 @@ E log E vs V^2
 
 박진영:
 
-서민혁:
+서민혁: https://www.acmicpc.net/problem/1197
 
 유태정: https://www.acmicpc.net/problem/4386
 
