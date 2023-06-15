@@ -268,7 +268,7 @@ E log E vs V^2
 
 김하진:
 
-김재헌: 
+김재헌: https://www.acmicpc.net/problem/23743
 
 박상준: 
 
