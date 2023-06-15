@@ -270,20 +270,20 @@ E log E vs V^2
 
 김재헌: https://www.acmicpc.net/problem/23743
 
-박상준: 
+박상준: https://leetcode.com/problems/min-cost-to-connect-all-points/description/
 
-박진영: 
+박진영:
 
-서민혁: 
+서민혁:
 
 유태정: https://www.acmicpc.net/problem/4386
 
-이재혁: 
+이재혁:
 
-이성구: 
+이성구:
 
-조민준: 
+조민준:
 
-정준우: 
+정준우:
 
 한태혁: https://leetcode.com/problems/min-cost-to-connect-all-points/
