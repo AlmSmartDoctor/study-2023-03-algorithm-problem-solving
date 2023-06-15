@@ -284,6 +284,6 @@ E log E vs V^2
 
 조민준:
 
-정준우:
+정준우: https://www.acmicpc.net/problem/14950
 
 한태혁: https://leetcode.com/problems/min-cost-to-connect-all-points/
